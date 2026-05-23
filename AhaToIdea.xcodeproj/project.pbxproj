@@ -1,0 +1,508 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01C50274B8DEC63975CF62C3 /* AudioRecordingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD2A04A7975719B4569555F /* AudioRecordingService.swift */; };
+		031F0D1B705C877B376FB6AE /* LLMClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0397E673C132F5C918071323 /* LLMClient.swift */; };
+		24C614EA60BBC42364D3EC68 /* CaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7F7AFD83A4E77DE523C318 /* CaptureView.swift */; };
+		2E967D38FE48B16275075575 /* DialogueSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A0D034BAE2EFF040AD89B7 /* DialogueSession.swift */; };
+		36E1D06258995F9F20CB754C /* AhaListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92428841906786CE8D903BE8 /* AhaListView.swift */; };
+		3E0701BCDBF7840887EEF08F /* AhaToIdeaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA49C8A52D55524896109C7 /* AhaToIdeaApp.swift */; };
+		419BBA96288CAAEEDA069E82 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECF069DA40AB03B82C57744 /* Constants.swift */; };
+		51E5386E89AA14112CC756C2 /* ReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A15AA701E8D44A1F4C532 /* ReportView.swift */; };
+		5C8742E15A502765F1B55665 /* KeywordCapsule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E47C592A58E9BA31762CF7A /* KeywordCapsule.swift */; };
+		6283240B2647E99572E29F67 /* CaptureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE7E483329F4ACFA75E0BD1 /* CaptureViewModel.swift */; };
+		65C261E778EBB75FC12F430E /* DialogueBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A358FE7CF6E65BB155BB8B08 /* DialogueBubbleView.swift */; };
+		69A5189A296CA5AA1D57EBA1 /* DialogueViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A927C96AE86FC364D4AC18 /* DialogueViewModel.swift */; };
+		6F05AB83795D31709A5CB3E6 /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102E225D0DAAC05916F0E15A /* AppViewModel.swift */; };
+		77E7443FF5A5624114F7C81E /* IdeationReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EF771E2FC142789077FC3A /* IdeationReport.swift */; };
+		7EED8860F7A2550EB6310392 /* TencentASRClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1753E7D36BEEA32ECA4CB2 /* TencentASRClient.swift */; };
+		84126689976730EE96D94544 /* AhaMoment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B774381021A67AD0046A08 /* AhaMoment.swift */; };
+		8A11BC1E7AB937E6989C27AC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F2B75A36E97561D8544950 /* ContentView.swift */; };
+		A1497804CCAA86DDF0A02590 /* ConfirmationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08A9389CA4C6C3321BDB733 /* ConfirmationViewModel.swift */; };
+		ACCA16DF1857604405604BDD /* AhaDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EA54B1C6E9F90CCF9682F9 /* AhaDetailView.swift */; };
+		AF8DF17111E50D2BC6E1A8F2 /* ResourceRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CAA4812F9269E39707FF3D /* ResourceRef.swift */; };
+		B9BF3936617385CDD14598ED /* KeywordParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B5CF0E054528F18E18452A /* KeywordParser.swift */; };
+		BCDCEB717C6594A5E51488BE /* ReportViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051497930265306F45E71779 /* ReportViewModel.swift */; };
+		CD5F0F17D17A5C3BC001A8F9 /* ResourceContentExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CAB28148DC4EF916D4A6E5 /* ResourceContentExtractor.swift */; };
+		CE2CBCEE673C86190C4381AE /* PhaseBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4557F1A770BD92F5753BEDB8 /* PhaseBadge.swift */; };
+		D40D28D8BF2EF2D7B09D4A7E /* PromptBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BFF072596558E06085E8CF /* PromptBuilder.swift */; };
+		E253833BC911317045FA9FC3 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58422E593D658024FF2E5DEE /* SettingsView.swift */; };
+		E6C0163C9BB7E48EE9BD37EF /* DialogueMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD49634228A544A92AB0C20C /* DialogueMessage.swift */; };
+		EEB146E2A6A9DAD29C62BB2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1E332D62215140FD8F0FE60 /* Assets.xcassets */; };
+		EEBA635F02D724D06CAB64FC /* TTSService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66F8461D213F6BA7EF8166D /* TTSService.swift */; };
+		F346FBA30FE327E78C060279 /* ConfirmationRound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EBC26DB63B0BA0D3EE66C0 /* ConfirmationRound.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0397E673C132F5C918071323 /* LLMClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLMClient.swift; sourceTree = "<group>"; };
+		051497930265306F45E71779 /* ReportViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewModel.swift; sourceTree = "<group>"; };
+		102E225D0DAAC05916F0E15A /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
+		29F2B75A36E97561D8544950 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2E47C592A58E9BA31762CF7A /* KeywordCapsule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeywordCapsule.swift; sourceTree = "<group>"; };
+		2ECF069DA40AB03B82C57744 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2F1753E7D36BEEA32ECA4CB2 /* TencentASRClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TencentASRClient.swift; sourceTree = "<group>"; };
+		35EBC26DB63B0BA0D3EE66C0 /* ConfirmationRound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationRound.swift; sourceTree = "<group>"; };
+		41A927C96AE86FC364D4AC18 /* DialogueViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogueViewModel.swift; sourceTree = "<group>"; };
+		4557F1A770BD92F5753BEDB8 /* PhaseBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhaseBadge.swift; sourceTree = "<group>"; };
+		5611E3A066F9A93CDF682C51 /* AhaToIdea.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = AhaToIdea.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		57CAA4812F9269E39707FF3D /* ResourceRef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceRef.swift; sourceTree = "<group>"; };
+		58422E593D658024FF2E5DEE /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		6DE7E483329F4ACFA75E0BD1 /* CaptureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureViewModel.swift; sourceTree = "<group>"; };
+		70A0D034BAE2EFF040AD89B7 /* DialogueSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogueSession.swift; sourceTree = "<group>"; };
+		74B774381021A67AD0046A08 /* AhaMoment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AhaMoment.swift; sourceTree = "<group>"; };
+		8DD2A04A7975719B4569555F /* AudioRecordingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecordingService.swift; sourceTree = "<group>"; };
+		92428841906786CE8D903BE8 /* AhaListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AhaListView.swift; sourceTree = "<group>"; };
+		A358FE7CF6E65BB155BB8B08 /* DialogueBubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogueBubbleView.swift; sourceTree = "<group>"; };
+		ADE4BB509DFFE301AE728972 /* AhaToIdea.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AhaToIdea.entitlements; sourceTree = "<group>"; };
+		AFA49C8A52D55524896109C7 /* AhaToIdeaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AhaToIdeaApp.swift; sourceTree = "<group>"; };
+		B08A9389CA4C6C3321BDB733 /* ConfirmationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationViewModel.swift; sourceTree = "<group>"; };
+		B9EA54B1C6E9F90CCF9682F9 /* AhaDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AhaDetailView.swift; sourceTree = "<group>"; };
+		CD49634228A544A92AB0C20C /* DialogueMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogueMessage.swift; sourceTree = "<group>"; };
+		CF4A15AA701E8D44A1F4C532 /* ReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportView.swift; sourceTree = "<group>"; };
+		D0EF771E2FC142789077FC3A /* IdeationReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdeationReport.swift; sourceTree = "<group>"; };
+		D6CAB28148DC4EF916D4A6E5 /* ResourceContentExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceContentExtractor.swift; sourceTree = "<group>"; };
+		E1B5CF0E054528F18E18452A /* KeywordParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeywordParser.swift; sourceTree = "<group>"; };
+		E1E332D62215140FD8F0FE60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E5BFF072596558E06085E8CF /* PromptBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptBuilder.swift; sourceTree = "<group>"; };
+		F66F8461D213F6BA7EF8166D /* TTSService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTSService.swift; sourceTree = "<group>"; };
+		FE7F7AFD83A4E77DE523C318 /* CaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0390CC2C380DD8B3D675BC94 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				74B774381021A67AD0046A08 /* AhaMoment.swift */,
+				35EBC26DB63B0BA0D3EE66C0 /* ConfirmationRound.swift */,
+				CD49634228A544A92AB0C20C /* DialogueMessage.swift */,
+				70A0D034BAE2EFF040AD89B7 /* DialogueSession.swift */,
+				D0EF771E2FC142789077FC3A /* IdeationReport.swift */,
+				57CAA4812F9269E39707FF3D /* ResourceRef.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3CAFAF555B59307F1A842FCA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B9EA54B1C6E9F90CCF9682F9 /* AhaDetailView.swift */,
+				92428841906786CE8D903BE8 /* AhaListView.swift */,
+				FE7F7AFD83A4E77DE523C318 /* CaptureView.swift */,
+				29F2B75A36E97561D8544950 /* ContentView.swift */,
+				A358FE7CF6E65BB155BB8B08 /* DialogueBubbleView.swift */,
+				CF4A15AA701E8D44A1F4C532 /* ReportView.swift */,
+				58422E593D658024FF2E5DEE /* SettingsView.swift */,
+				4F19EBF0A71F7F6B150C0379 /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3F5ED1BF2F646B1BB41173DE /* LLM */ = {
+			isa = PBXGroup;
+			children = (
+				0397E673C132F5C918071323 /* LLMClient.swift */,
+			);
+			path = LLM;
+			sourceTree = "<group>";
+		};
+		45448020B65A00540B9A91BF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8DD2A04A7975719B4569555F /* AudioRecordingService.swift */,
+				E5BFF072596558E06085E8CF /* PromptBuilder.swift */,
+				D6CAB28148DC4EF916D4A6E5 /* ResourceContentExtractor.swift */,
+				F66F8461D213F6BA7EF8166D /* TTSService.swift */,
+				A7F1CC59CA08A2303A750F24 /* ASR */,
+				3F5ED1BF2F646B1BB41173DE /* LLM */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4F19EBF0A71F7F6B150C0379 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				2E47C592A58E9BA31762CF7A /* KeywordCapsule.swift */,
+				4557F1A770BD92F5753BEDB8 /* PhaseBadge.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		70D1194458B15CAB4C2882CB /* AhaToIdea */ = {
+			isa = PBXGroup;
+			children = (
+				ADE4BB509DFFE301AE728972 /* AhaToIdea.entitlements */,
+				AFA49C8A52D55524896109C7 /* AhaToIdeaApp.swift */,
+				E1E332D62215140FD8F0FE60 /* Assets.xcassets */,
+				B48F3DADCC66E3AC61534550 /* Extensions */,
+				0390CC2C380DD8B3D675BC94 /* Models */,
+				45448020B65A00540B9A91BF /* Services */,
+				DB8D23BFECB9A931AFE961A6 /* Utilities */,
+				8E84824FDFA0799B03D0E300 /* ViewModels */,
+				3CAFAF555B59307F1A842FCA /* Views */,
+			);
+			path = AhaToIdea;
+			sourceTree = "<group>";
+		};
+		8E84824FDFA0799B03D0E300 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				102E225D0DAAC05916F0E15A /* AppViewModel.swift */,
+				6DE7E483329F4ACFA75E0BD1 /* CaptureViewModel.swift */,
+				B08A9389CA4C6C3321BDB733 /* ConfirmationViewModel.swift */,
+				41A927C96AE86FC364D4AC18 /* DialogueViewModel.swift */,
+				051497930265306F45E71779 /* ReportViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A591B463A35745F7151BC2D7 = {
+			isa = PBXGroup;
+			children = (
+				70D1194458B15CAB4C2882CB /* AhaToIdea */,
+				B5C548B3F6AF83582240771B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A7F1CC59CA08A2303A750F24 /* ASR */ = {
+			isa = PBXGroup;
+			children = (
+				2F1753E7D36BEEA32ECA4CB2 /* TencentASRClient.swift */,
+			);
+			path = ASR;
+			sourceTree = "<group>";
+		};
+		B48F3DADCC66E3AC61534550 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B5C548B3F6AF83582240771B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5611E3A066F9A93CDF682C51 /* AhaToIdea.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB8D23BFECB9A931AFE961A6 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				2ECF069DA40AB03B82C57744 /* Constants.swift */,
+				E1B5CF0E054528F18E18452A /* KeywordParser.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4109F9D429AC2C00BD7ADBF5 /* AhaToIdea */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C07670386C9D229EBFB72C0E /* Build configuration list for PBXNativeTarget "AhaToIdea" */;
+			buildPhases = (
+				2A83D54532559B6D023BF653 /* Sources */,
+				75D8F17AE7C16601C9E48610 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AhaToIdea;
+			packageProductDependencies = (
+			);
+			productName = AhaToIdea;
+			productReference = 5611E3A066F9A93CDF682C51 /* AhaToIdea.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC6C84AADE84E6D2EA2A1AE8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					4109F9D429AC2C00BD7ADBF5 = {
+						DevelopmentTeam = "";
+					};
+				};
+			};
+			buildConfigurationList = 6E67241E2377A495315EA400 /* Build configuration list for PBXProject "AhaToIdea" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = A591B463A35745F7151BC2D7;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = B5C548B3F6AF83582240771B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4109F9D429AC2C00BD7ADBF5 /* AhaToIdea */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		75D8F17AE7C16601C9E48610 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEB146E2A6A9DAD29C62BB2C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2A83D54532559B6D023BF653 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACCA16DF1857604405604BDD /* AhaDetailView.swift in Sources */,
+				36E1D06258995F9F20CB754C /* AhaListView.swift in Sources */,
+				84126689976730EE96D94544 /* AhaMoment.swift in Sources */,
+				3E0701BCDBF7840887EEF08F /* AhaToIdeaApp.swift in Sources */,
+				6F05AB83795D31709A5CB3E6 /* AppViewModel.swift in Sources */,
+				01C50274B8DEC63975CF62C3 /* AudioRecordingService.swift in Sources */,
+				24C614EA60BBC42364D3EC68 /* CaptureView.swift in Sources */,
+				6283240B2647E99572E29F67 /* CaptureViewModel.swift in Sources */,
+				F346FBA30FE327E78C060279 /* ConfirmationRound.swift in Sources */,
+				A1497804CCAA86DDF0A02590 /* ConfirmationViewModel.swift in Sources */,
+				419BBA96288CAAEEDA069E82 /* Constants.swift in Sources */,
+				8A11BC1E7AB937E6989C27AC /* ContentView.swift in Sources */,
+				65C261E778EBB75FC12F430E /* DialogueBubbleView.swift in Sources */,
+				E6C0163C9BB7E48EE9BD37EF /* DialogueMessage.swift in Sources */,
+				2E967D38FE48B16275075575 /* DialogueSession.swift in Sources */,
+				69A5189A296CA5AA1D57EBA1 /* DialogueViewModel.swift in Sources */,
+				77E7443FF5A5624114F7C81E /* IdeationReport.swift in Sources */,
+				5C8742E15A502765F1B55665 /* KeywordCapsule.swift in Sources */,
+				B9BF3936617385CDD14598ED /* KeywordParser.swift in Sources */,
+				031F0D1B705C877B376FB6AE /* LLMClient.swift in Sources */,
+				CE2CBCEE673C86190C4381AE /* PhaseBadge.swift in Sources */,
+				D40D28D8BF2EF2D7B09D4A7E /* PromptBuilder.swift in Sources */,
+				51E5386E89AA14112CC756C2 /* ReportView.swift in Sources */,
+				BCDCEB717C6594A5E51488BE /* ReportViewModel.swift in Sources */,
+				CD5F0F17D17A5C3BC001A8F9 /* ResourceContentExtractor.swift in Sources */,
+				AF8DF17111E50D2BC6E1A8F2 /* ResourceRef.swift in Sources */,
+				E253833BC911317045FA9FC3 /* SettingsView.swift in Sources */,
+				EEBA635F02D724D06CAB64FC /* TTSService.swift in Sources */,
+				7EED8860F7A2550EB6310392 /* TencentASRClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3EB104DBA93F66EC99D1FF4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_ENTITLEMENTS = AhaToIdea/AhaToIdea.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Aha to Idea";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "需要使用麦克风来录制你的语音想法";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "需要语音识别来将你的语音转换为文字";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ahatoidea.AhaToIdea;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		639296071F601F3D3F9A7A7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_ENTITLEMENTS = AhaToIdea/AhaToIdea.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Aha to Idea";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "需要使用麦克风来录制你的语音想法";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "需要语音识别来将你的语音转换为文字";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ahatoidea.AhaToIdea;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C14FA52CCC490412B27F2701 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+		D409A94CDEB5E54492172D29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6E67241E2377A495315EA400 /* Build configuration list for PBXProject "AhaToIdea" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D409A94CDEB5E54492172D29 /* Debug */,
+				C14FA52CCC490412B27F2701 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C07670386C9D229EBFB72C0E /* Build configuration list for PBXNativeTarget "AhaToIdea" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EB104DBA93F66EC99D1FF4C /* Debug */,
+				639296071F601F3D3F9A7A7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AC6C84AADE84E6D2EA2A1AE8 /* Project object */;
+}

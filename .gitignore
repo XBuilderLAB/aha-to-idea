@@ -1,0 +1,41 @@
+# Xcode
+DerivedData/
+build/
+*.xcuserdata
+*.xcworkspace/xcuserdata/
+xcuserdata/
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xcuserstate
+project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Swift Package Manager
+.build/
+Packages/
+Package.resolved
+
+# CocoaPods (if ever used)
+Pods/
+
+# Secrets — never commit
+.env
+.env.*
+*.secret
+credentials.json
+secrets.plist
+
+# Claude Code
+.claude/
+
+# Misc
+*.swp
+*.lock
+*~
