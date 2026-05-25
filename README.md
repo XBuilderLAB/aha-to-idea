@@ -105,6 +105,44 @@ xcodegen generate
 open AhaToIdea.xcodeproj
 ```
 
+## Claude Code Skill
+
+This project also ships as a **Claude Code skill** — you can run the full 4-phase ideation workflow directly in your terminal as a slash command, no iOS device needed.
+
+### Install
+
+```bash
+# Clone the repo
+git clone https://github.com/XBuilderLAB/aha-to-idea.git
+
+# Copy the skill to your Claude Code skills directory
+cp -r aha-to-idea/skills/aha ~/.claude/skills/aha
+```
+
+### Usage
+
+```bash
+# Start from scratch — will ask for keywords
+/aha
+
+# Or provide keywords directly to skip capture phase
+/aha AI教育 个性化学习 认知科学
+```
+
+The skill walks you through the same 4 phases: Capture → Dialogue → Confirmation → Report. At the end, you get a structured Markdown report saved to `/tmp/`.
+
+### iOS App vs. Skill
+
+| | iOS App | Claude Code Skill |
+|---|---|---|
+| Input | Voice (ASR) + Text | Text only |
+| Portability | On-the-go, shower thoughts | At your desk, in terminal |
+| Output | In-app report view | Markdown file |
+| Persistence | SwiftData (local DB) | File-based |
+| Voice features | Recording, ASR, polish | None |
+
+Both share the same core prompt design and workflow philosophy. Use whichever fits the moment.
+
 ## Architecture
 
 ```
