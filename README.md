@@ -4,9 +4,6 @@
 
 A **Claude Code skill** that turns your "aha moment" into a structured ideation report — from fleeting intuition to something you can actually work with.
 
-```
-/aha AI教育 个性化学习 认知科学
-```
 
 ## The Problem
 
