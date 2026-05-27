@@ -36,7 +36,7 @@ The AI presents its understanding in three parts:
 You correct, it updates. Rounds continue until you confirm.
 
 ### Phase 4: Report
-A structured Markdown report is generated with one critical rule: **the AI writes structure, you write content**. Your original words are preserved as-is. Gaps are marked `[待展开]` instead of filled with AI-generated filler.
+A structured Markdown report is generated with one critical rule: **the AI writes structure, you write content**. Your original words are preserved as-is. Gaps are marked there instead of filled with AI-generated filler so that you may continue work with it, but in a more logical and structured manner.
 
 ## Install
 
