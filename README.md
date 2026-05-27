@@ -1,6 +1,12 @@
+[中文](README_CN.md)
+
 # Aha to Idea
 
-From fleeting moment to structured thinking — a 4-phase iOS workflow that turns your "aha" into something you can actually work with.
+A **Claude Code skill** that turns your "aha moment" into a structured ideation report — from fleeting intuition to something you can actually work with.
+
+```
+/aha AI教育 个性化学习 认知科学
+```
 
 ## The Problem
 
@@ -8,108 +14,34 @@ You get an idea in the shower, on a walk, in a conversation. You think you'll re
 
 Note-taking apps capture text. Voice memos capture sound. Neither captures **thinking**.
 
-## What This App Does
+## What This Skill Does
 
 Aha to Idea is a structured thinking workflow, not a note-taking app. It guides you from raw intuition to a structured ideation report through four phases:
 
-### Phase 1: Capture (随手记)
-Tap, type keywords, done. Under 5 seconds from app open to idea saved. Attach resources (links, notes, files) if you have them — but you don't need to.
+### Phase 1: Capture
+Give it keywords. That's it. No forms, no templates — just the raw fragments of your idea.
 
-### Phase 2: Dialogue (对话展开)
-Talk it out. The AI acts as a curious listener — it asks questions, never gives answers. Your voice is transcribed and polished, then fed into the dialogue. The goal is to help you think out loud, not to summarize for you.
+### Phase 2: Dialogue
+The AI acts as a **thinking partner**, not an expert. It assumes you already understand your keywords and asks questions that push your thinking deeper:
 
-### Phase 3: Confirmation (理解确认)
+- "What's the connection between these two ideas?"
+- "If this worked out, what would excite you the most?"
+- "What do you think the biggest obstacle would be?"
+
+Only when you explicitly signal uncertainty ("I'm not sure about this", "I just heard about it") does it shift to foundational questions.
+
+### Phase 3: Confirmation
 The AI presents its understanding in three parts:
-- **What I understood** — your exact words, quoted
+- **What I understood** — your exact words, quoted in 「」
 - **What I'm uncertain about** — where ambiguity lives
 - **What I need from you** — follow-up questions
 
 You correct, it updates. Rounds continue until you confirm.
 
-### Phase 4: Report (结构化报告)
+### Phase 4: Report
 A structured Markdown report is generated with one critical rule: **the AI writes structure, you write content**. Your original words are preserved as-is. Gaps are marked `[待展开]` instead of filled with AI-generated filler.
 
-## Why This Workflow Matters
-
-Most AI tools either capture (voice memos, notes) or generate (ChatGPT). This app sits in between — it **extends your thinking** without replacing it. The key design decisions:
-
-- **AI as listener, not expert** — it asks questions, never provides answers
-- **Your words, not AI's** — the final report uses your original phrasing
-- **Low-friction entry** — keywords first, detail later
-- **Iterative** — you can go back and re-dialogue after seeing the report
-
-## Tech Stack
-
-| Layer | Choice | Why |
-|-------|--------|-----|
-| UI | SwiftUI (iOS 17+) | Declarative, native, SwiftData integration |
-| Persistence | SwiftData | Zero boilerplate `@Model` + `@Query` |
-| Voice Input | AVAudioRecorder + Tencent Cloud ASR | Better Chinese recognition than on-device |
-| Voice Polish | LLM | Raw ASR → structured text, preserving intent |
-| AI Dialogue | DeepSeek / OpenAI API | Switchable provider via protocol |
-| Text-to-Speech | AVFoundation | Built-in, free, multilingual |
-
-## Project Status
-
-**This project is actively being developed.** Many features are not yet complete — what's here is a working end-to-end skeleton, not a finished product. Expect rough edges, missing features, and breaking changes.
-
-**~30-40% complete.** The core 4-phase workflow runs, but most phases need polish and several features are still TODO.
-
-### What Works
-- Keyword capture and parsing
-- Voice recording with time limits
-- Chinese ASR via Tencent Cloud
-- ASR text polishing via LLM
-- AI dialogue in listening mode
-- Multi-round understanding confirmation
-- Structured report generation with user-word preservation
-- DeepSeek and OpenAI API support
-
-### What's In Progress / TODO
-- Photo and file resource attachments
-- Report export (Markdown / PDF)
-- TTS playback of AI responses
-- On-device ASR fallback (Apple Speech)
-- Report fidelity verification (detecting AI rewrites)
-- UI polish and edge cases
-
-## API Keys & Credentials
-
-This app requires external API services to function. **No API keys or secrets are included in this repository** — you need to bring your own.
-
-| Service | Provider | What You Need | Where to Get It |
-|---------|----------|---------------|-----------------|
-| LLM (Large Language Model) | OpenAI or DeepSeek | API Key | [OpenAI](https://platform.openai.com/api-keys) / [DeepSeek](https://platform.deepseek.com/api_keys) |
-| ASR (Speech Recognition) | Tencent Cloud | SecretId + SecretKey | [Tencent Cloud Console](https://console.cloud.tencent.com/cam/capi) |
-
-After launching the app, go to **Settings** to fill in your credentials. All keys are stored locally on your device via UserDefaults — they are never sent anywhere except to the respective API endpoints.
-
-## Getting Started
-
-### Prerequisites
-- Xcode 15+
-- iOS 17.0+ device or simulator
-- [xcodegen](https://github.com/yonaskolb/XcodeGen) for project generation
-
-### Setup
-
-```bash
-# Clone the repo
-git clone https://github.com/aidenhhyy1030/aha-to-idea.git
-cd aha-to-idea
-
-# Generate Xcode project
-xcodegen generate
-
-# Open and run
-open AhaToIdea.xcodeproj
-```
-
-## Claude Code Skill
-
-This project also ships as a **Claude Code skill** — you can run the full 4-phase ideation workflow directly in your terminal as a slash command, no iOS device needed.
-
-### Install
+## Install
 
 ```bash
 # Clone the repo
@@ -119,40 +51,54 @@ git clone https://github.com/XBuilderLAB/aha-to-idea.git
 cp -r aha-to-idea/skills/aha ~/.claude/skills/aha
 ```
 
-### Usage
+## Usage
 
 ```bash
 # Start from scratch — will ask for keywords
 /aha
 
-# Or provide keywords directly to skip capture phase
+# Provide keywords directly to skip capture phase
 /aha AI教育 个性化学习 认知科学
 ```
 
-The skill walks you through the same 4 phases: Capture → Dialogue → Confirmation → Report. At the end, you get a structured Markdown report saved to `/tmp/`.
+The skill walks you through: Capture → Dialogue → Confirmation → Report. At the end, you get a structured Markdown report saved to `/tmp/`.
 
-### iOS App vs. Skill
+## Design Philosophy
 
-| | iOS App | Claude Code Skill |
+Most AI tools either capture (voice memos, notes) or generate (ChatGPT). This skill sits in between — it **extends your thinking** without replacing it.
+
+- **AI as thinking partner, not expert** — it pushes your thinking deeper, doesn't think for you
+- **Your words, not AI's** — the final report uses your original phrasing
+- **Assume understanding** — it treats you as someone who knows their keywords, not a beginner
+- **Iterative** — you can go back and re-dialogue after seeing the report
+
+## Also Available as an iOS App
+
+The same workflow is available as a native iOS app with additional features:
+
+| | Claude Code Skill | iOS App |
 |---|---|---|
-| Input | Voice (ASR) + Text | Text only |
-| Portability | On-the-go, shower thoughts | At your desk, in terminal |
-| Output | In-app report view | Markdown file |
-| Persistence | SwiftData (local DB) | File-based |
-| Voice features | Recording, ASR, polish | None |
+| Input | Text only | Voice (ASR) + Text |
+| Portability | At your desk, in terminal | On-the-go, shower thoughts |
+| Output | Markdown file | In-app report view |
+| Voice features | None | Recording, ASR, LLM polish |
 
-Both share the same core prompt design and workflow philosophy. Use whichever fits the moment.
+### iOS App Prerequisites
+- Xcode 15+
+- iOS 17.0+ device or simulator
+- [xcodegen](https://github.com/yonaskolb/XcodeGen)
+- API keys for LLM (OpenAI/DeepSeek) and ASR (Tencent Cloud) — stored locally, never shared
 
-## Architecture
-
+### iOS App Setup
+```bash
+git clone https://github.com/XBuilderLAB/aha-to-idea.git
+cd aha-to-idea
+xcodegen generate
+open AhaToIdea.xcodeproj
 ```
-MVVM + Service Layer
 
-Views (SwiftUI)
-  → ViewModels (@Observable)
-    → Services (LLMClient, TencentASRClient, AudioRecordingService, PromptBuilder, TTSService)
-      → SwiftData (ModelContext)
-```
+### iOS App Status
+~30-40% complete. Core 4-phase workflow runs. In progress: resource attachments, report export, TTS playback, on-device ASR fallback.
 
 ## Author
 
