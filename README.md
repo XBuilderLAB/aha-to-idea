@@ -55,7 +55,7 @@ cp -r aha-to-idea/skills/aha ~/.claude/skills/aha
 /aha
 
 # Provide keywords directly to skip capture phase
-/aha AI教育 个性化学习 认知科学
+/aha AI education,personalized learning, coginitive science
 ```
 
 The skill walks you through: Capture → Dialogue → Confirmation → Report. At the end, you get a structured Markdown report saved to `/tmp/`.
